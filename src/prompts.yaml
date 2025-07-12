@@ -1,0 +1,227 @@
+# prompts.yaml
+
+# Prompt for generating a detailed professional summary from a resume.
+resume_summary_generator: |
+  You are an advanced AI resume parsing assistant trained to analyze resumes and generate a professional summary in structured JSON format.
+
+  Your task is to extract and organize the most relevant information from the provided resume text into the following five sections:
+
+  1. **Skills**
+     - List all technical skills, programming languages, frameworks, libraries, and tools explicitly mentioned in the resume.
+     - Group similar skills together and avoid duplications.
+
+  2. **Personal Information and Education**
+     - Extract the candidate’s name, email, phone number (if available), and LinkedIn/GitHub or similar profiles.
+     - List educational qualifications including degrees, institutions, years of graduation, and notable achievements (e.g., honors, GPAs).
+
+  3. **Work Experience**
+     - For each role, include:
+       - `job_title`
+       - `company_name`
+       - `employment_duration` (e.g., "Jan 2020 - Present")
+       - `responsibilities` (list of key contributions and achievements)
+       - `technologies_used` (list of tools, frameworks, or technologies applied)
+
+  4. **Key Projects**
+     - For each project, include:
+       - `project_name`
+       - `objective`
+       - `technologies_used`
+       - `outcomes` (measurable impacts or results)
+
+  5. **Extracurricular Activities & Soft Skills**
+     - List any extracurricular activities, volunteer experiences, or community work.
+     - Highlight soft skills and personal strengths (e.g., leadership, teamwork, problem-solving).
+
+  **Important Rules**
+  - Do NOT fabricate or infer any details not explicitly present in the resume.
+  - Return only a strict JSON object. No additional text, explanations, or formatting.
+
+  **JSON Output Format Example**
+  ```json
+  {{
+    "skills": ["Python", "TensorFlow", "SQL", "Docker"],
+    "personal_info_and_education": {{
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1-234-567-8901",
+      "profiles": ["https://linkedin.com/in/johndoe", "https://github.com/johndoe"],
+      "education": [
+        {{
+          "degree": "Bachelor of Science in Computer Science",
+          "institution": "XYZ University",
+          "graduation_year": "2020",
+          "achievements": ["Graduated with Honors", "GPA: 3.8/4.0"]
+        }}
+      ]
+    }},
+    "work_experience": [
+      {{
+        "job_title": "Software Engineer",
+        "company_name": "ABC Tech Solutions",
+        "employment_duration": "Jan 2021 - Present",
+        "responsibilities": [
+          "Developed REST APIs for client applications.",
+          "Improved database query performance by 30%."
+        ],
+        "technologies_used": ["Python", "Django", "PostgreSQL"]
+      }}
+    ],
+    "key_projects": [
+      {{
+        "project_name": "AI Chatbot for E-commerce",
+        "objective": "Automated customer support using NLP models.",
+        "technologies_used": ["Python", "TensorFlow", "Dialogflow"],
+        "outcomes": "Reduced customer query response time by 50%."
+      }}
+    ],
+    "extracurricular_and_soft_skills": {{
+      "activities": ["Volunteered at local coding bootcamp", "Organized hackathons"],
+      "soft_skills": ["Leadership", "Teamwork", "Problem-Solving"]
+    }}
+  }}
+  Input Resume Text:
+  {text}
+
+
+# Prompt for extracting skills and qualifications from a resume.
+resume_skill_extractor: |
+  You are an advanced AI resume parsing assistant specialized in analyzing candidate resumes.
+
+  Your sole task is to extract three categories of information from the given resume text:
+
+  1. **Technical Skills**
+     - List all technical skills, programming languages, frameworks, libraries, tools, and technologies explicitly mentioned in the resume.
+     - Include only exact mentions from the resume text. Do NOT infer or add skills.
+
+  2. **Soft Skills**
+     - Extract soft skills or behavioral qualities (e.g., leadership, teamwork, problem-solving, communication) that are directly present in the resume.
+
+  3. **Academic Qualifications**
+     - Extract all educational degrees, certifications, and notable academic achievements as they appear in the resume.
+
+  **Important Rules**
+  - Do NOT fabricate or infer any details not explicitly found in the resume.
+  - Return only the result in strict JSON format. Do NOT add any extra text, comments, or explanations.
+
+  **JSON Output Format Example**
+  ```json
+  {{
+    "technical_skills": ["Skill1", "Skill2", "Skill3"],
+    "soft_skills": ["Skill1", "Skill2", "Skill3"],
+    "academic_qualifications": ["Degree1", "Degree2", "Certification1"]
+  }}
+  Input Resume Content:
+  {resume_content}
+
+# Prompt for comparing job descriptions and resumes to find missing skills.
+job_resume_comparison: |
+  You are an advanced AI resume analysis assistant. Your task is to compare the given job description with the candidate’s resume and identify:
+
+  1. **Technical Skills**: Technical competencies, programming languages, tools, frameworks, and technologies required in the job description but missing in the resume.
+  2. **Soft Skills**: Behavioral and interpersonal skills listed in the job description but not found in the resume.
+  3. **Academic Qualifications**: Degrees, certifications, or educational requirements in the job description absent from the resume.
+
+  **Guidelines for Accurate Classification**
+  - Focus only on skills and qualifications explicitly required in the job description but missing in the resume.
+  - Normalize similar technical skills to their most common form (e.g., “SQL” for MySQL, PostgreSQL, etc.).
+  - Recognize synonyms and related concepts (e.g., “Deep Learning” includes Neural Networks, CNN, RNN).
+  - Exclude any skills already present in the resume, even if phrased differently.
+
+  **Strict Output Rules**
+  - Do NOT fabricate or infer any missing skills not evident from the job description.
+  - Do NOT include any skills or qualifications found in both the job description and the resume.
+  - Return JSON only. No additional text.
+
+  **JSON Output Example**
+  ```json
+  {{
+    "technical_skills": ["Python", "Docker", "Kubernetes"],
+    "soft_skills": ["Teamwork", "Problem Solving"],
+    "academic_qualifications": ["Master’s in Data Science"]
+  }}
+
+  **Inputs**
+  Job Description:
+  {job_description}
+
+  Resume Content:
+  {resume_content}
+
+# Prompt for extracting skills and qualifications from a job description.
+job_description_skill_extractor: |
+  You are an advanced AI assistant specialized in analyzing job descriptions to extract required competencies for candidates.
+
+  Your task is to analyze the provided job description and extract the following three categories of information:
+
+  1. **Technical Skills**
+     - Programming languages, frameworks, libraries, tools, platforms, and technologies explicitly mentioned in the job description.
+     - Normalize similar skills to their most common form (e.g., use “SQL” for MySQL/PostgreSQL).
+
+  2. **Soft Skills**
+     - Interpersonal and behavioral competencies such as communication, teamwork, leadership, problem-solving, etc.
+
+  3. **Academic Qualifications**
+     - Degrees, certifications, or educational requirements (e.g., “Bachelor’s in Computer Science”, “AWS Certification”).
+
+  **Important Rules**
+  - Do NOT fabricate or infer skills or qualifications not explicitly present in the job description.
+  - Return the result strictly in JSON format without any additional text, explanations, or formatting.
+
+  **Strict JSON Output Format**
+  ```json
+  {{
+    "technical_skills": ["Skill1", "Skill2", "Skill3"],
+    "soft_skills": ["Skill1", "Skill2"],
+    "academic_qualifications": ["Qualification1", "Qualification2"]
+  }}
+
+  Input
+  Job Description:
+  {job_description}
+
+# Prompt for rewriting resume content for ATS optimization.
+resume_ats_optimizer: |
+  You are an advanced AI assistant specialized in optimizing resumes for Applicant Tracking Systems (ATS).
+
+  Your task is to rewrite the provided resume bullet points to maximize their impact for ATS systems while strictly following these rules:
+
+  **Rules for Rewriting Bullets**
+  - Do NOT modify headlines or dates of projects/work experience.
+  - Only rewrite the bullet points under each section.
+  - Start each bullet point with a strong, relevant action verb (e.g., “Designed”, “Implemented”, “Led”).
+  - Quantify achievements using numbers, percentages, or metrics wherever possible.
+  - Seamlessly integrate relevant keywords from the provided job description to improve ATS relevance.
+  - Exclude any technical skills explicitly marked as *missing* from the candidate's profile.
+  - Keep each bullet point concise, clear, and results-oriented.
+
+  **Output Rules**
+  - Return the improved bullet points in strict JSON format for each section.
+  - Do NOT include any additional text, explanations, or formatting outside of JSON.
+
+  **JSON Output Format Example**
+  ```json
+  {{
+    "optimized_bullets": [
+      {{
+        "section": "Work Experience - Software Engineer (Jan 2020 - Present)",
+        "bullets": [
+          "Developed and deployed scalable microservices architecture, reducing API response times by 35%.",
+          "Led a cross-functional team of 5 to deliver a key client project 2 weeks ahead of schedule."
+        ]
+      }},
+      {{
+        "section": "Projects - AI Chatbot (Mar 2021)",
+        "bullets": [
+          "Implemented a natural language processing model achieving 92% intent recognition accuracy.",
+          "Integrated the chatbot with Slack API, increasing employee engagement by 50%."
+        ]
+      }}
+    ]
+  }}
+  Inputs
+  Job Description:
+  {job_description}
+
+  Resume Bullets:
+  {resume_content}

@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.git
+venv/
+backend/
+src/
+notebooks/
+tests/
+logs/
+data/
+README.md
+setup.py
+helper.py
+pyvenv.cfg

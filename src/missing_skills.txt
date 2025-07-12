@@ -1,0 +1,20 @@
+{
+  "technical_skills": [
+    "Data Pipelines",
+    "LLM",
+    "CI/CD",
+    "MLOps",
+    "Linux",
+    "BASH scripting",
+    "Low-latency programming",
+    "FPGA",
+    "Hardware Acceleration"
+  ],
+  "soft_skills": [
+    "Motivated"
+  ],
+  "academic_qualifications": [
+    "Master's degree",
+    "PhD degree"
+  ]
+}

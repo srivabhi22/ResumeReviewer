@@ -1,0 +1,58 @@
+Abhishek Srivastava
+Third Year Undergraduate srivabhi22@iitk.ac.in |/ne+91 8076170946
+Department of Mechanical Engineering /gtbsrivabhi22 |/♀nednAbhishek Srivastava
+Academic Qualifications
+Year Degree/Certificate Institute Performance
+2022 - Present B.Tech, Mechanical Engineering Indian Institute of Technology Kanpur 7.1/10
+2022 CBSE (XII) Ramagya School, Noida 87.6%
+2020 CBSE (X) Ramagya School, Noida 94.6%
+Scholastic Achievements
+•Secured AIR 2889 inJEE Advanced and AIR 2306 inJEE Mains 2022 among 1.027 million candidates 2022
+•Secured AIR 122inNEST and AIR 387inIISER Aptitude Test 2022 among 22,000+ candidates 2022
+Work Experience
+IndusTANTRA |Prof. Nalinaksh S. Vyas |Summer Intern |IIT Kanpur May’24 - Present
+Objective •Size estimation of undersized and oversized coal pellets
+Approach•Implemented YOLOv8 andUNet2D segmentation model for detecting oversized and undersized coal pellets
+•Created a custom labelled image dataset of 3000+ pellets using OpenCV andCVAT image annotation tool •Created a custom labelled image dataset of 3000+ pellets using OpenCV andCVAT image annotation tool
+•Usedleast-squares fitting approach on the predicted probability maps for accurate circular diameter estimation
+•Worked out on the camera setup and location in the on-site steel plant to capture accurate real time data
+Impact•Developed a system for reduction of repeated processing of the coal pellets by segregating the undersized and
+oversized pellets
+Key Projects
+Fault Detection and Classification using Deep Learning |Prof. Nalinaksh S. Vyas |IIT Kanpur Nov’23 - Feb’24
+•Utilized vibrational frequency data from6sensors for precise fault detection and classification in rotor bearings
+•Redesigned the CNN architecture , achieving an accuracy of0.95 in fault detection for real-world applications
+•Enhancing neural network interpretability by applying t-SNE for visualizing fault segregation •Enhancing neural network interpretability by applying t-SNE for visualizing fault segregation
+•Built a Tkinter GUI allowing users to input custom data and configure CNN model according to specifications given by user
+Finment |Self Project |/gtb Jun’24 - July’24
+•Analyzed 5,000+ financial news statements with FastText forEnd to End sentiment classification
+•Achieved 0.93 precision and0.89 recall , resulting in a highly robust classifier with a response time under 1000ms per request
+•Developed a Streamlit web app integrating the ML model with FastAPI andDocker containers for seamless performance
+Autonomous Navigation of Mars Rover |Robotics Club, IIT Kanpur |Summer Project May’24 - July’24
+•Utilized Canny edge detection andHough Transform withOpenCV for precise tennis ball detection
+•Implemented YOLOv8 on a custom dataset of 1,500+ annotated images, achieving 0.87 accuracy
+•Estimated the depth of centroids of objects using RGB depth maps and3D point clouds extracted using 3D ZED Camera •Estimated the depth of centroids of objects using RGB depth maps and3D point clouds extracted using 3D ZED Camera
+•Applied ORB-SLAM library forSimultaneous Localization and Mapping on a Mars (SLAM) terrain simulation
+BrainSegmentor |Self Project |/gtb April’24 - Jun’24
+•Analyzed brain MRI scans using the BraTS-2020 dataset, utilizing Unet3D for tumor detection and visualization
+•Trained on 1,800+ samples, using custom tensorflow image generators anddata loaders for efficient batch processing
+•Achieved an accuracy of 0.98,precision of0.9852 ,Intersection-Over-Union (IOU) of0.77 andDice coefficient as0.34
+Chirp: Birdsong Recognition |GDSC, IIT Kanpur |Winter Project |/gtb Dec’23 - January’24
+•Extracted the Mel-Frequency Cepstral Coefficients (MFCCs) from dataset containing 25000+ audio samples
+•Leveraged transfer learning techniques for training the well-known ResNet-50 model on the custom audio data •Leveraged transfer learning techniques for training the well-known ResNet-50 model on the custom audio data
+•Employed the usage of specialized PyTorch data loaders and generators for optimal training
+Positions of Responsibility
+Coordinator |Robotics Club April’24 - Present
+•Managed the budget Worth INR 2 Lakhs which was presented to the council and approved by the Senate
+•Successfully organized a competition, which saw participation of 30+ students design and build four-wheeled, armored
+sumo bots featuring two exciting rounds, highlighting the participants’ innovation and engineering skills.
+Technical Skills
+Programming Skills: Python, C,
+C++Frameworks/Libraries: OpenCV, Numpy, Pandas, Matplotlib, Seaborn, Plotly, Mat-
+lab, Pytorch, Tensorflow, Streamlit, Tkinter, Flask, FastAPI
+Utilities: MySQL, Docker, Heroku Miscellaneous: Jupyter Notebook, Git, L ATEX
+Relevant Courses *Ongoing
+Dynamics Theory of Mechanics & Machines Primary Manufacturing Processes Utilities: MySQL, Docker, Heroku Miscellaneous: Jupyter Notebook, Git, L ATEX
+Relevant Courses *Ongoing
+Dynamics Theory of Mechanics & Machines Primary Manufacturing Processes
+Introduction to Machine Learning * Economy, Society & Public Policy Introduction to Real Analysis

@@ -1,0 +1,62 @@
+{
+  "optimized_bullets": [
+    {
+      "section": "Work Experience - IndusTANTRA |Prof. Nalinaksh S. Vyas |Summer Intern |IIT Kanpur (May’24 - Present)",
+      "bullets": [
+        "Engineered a machine learning model using YOLOv8 and UNet2D for real-time detection and segmentation of coal pellets.",
+        "Developed a data pipeline using Python and OpenCV to collect, process, and analyze a custom dataset of over 3,000 images for model training.",
+        "Optimized pellet size estimation by applying a least-squares fitting algorithm to model-predicted probability maps, enhancing measurement accuracy.",
+        "Architected an automated sorting system that reduced redundant coal processing by accurately segregating pellets based on size."
+      ]
+    },
+    {
+      "section": "Key Projects - Fault Detection and Classification using Deep Learning |Prof. Nalinaksh S. Vyas |IIT Kanpur (Nov’23 - Feb’24)",
+      "bullets": [
+        "Developed a deep learning model to analyze vibrational frequency data from 6 sensors for high-precision fault detection and classification.",
+        "Optimized and fine-tuned a CNN architecture, achieving 95% accuracy in fault detection for real-world industrial applications.",
+        "Conducted experiments to evaluate model performance, improving interpretability by implementing t-SNE for visualizing high-dimensional fault data.",
+        "Engineered a user-facing GUI with Python and Tkinter to enable custom data input and dynamic CNN model configuration."
+      ]
+    },
+    {
+      "section": "Key Projects - Finment |Self Project |/gtb (Jun’24 - July’24)",
+      "bullets": [
+        "Designed and implemented an NLP model using FastText to perform sentiment analysis on a diverse dataset of over 5,000 financial news statements.",
+        "Evaluated model performance, achieving 93% precision and 89% recall, and engineered a high-performance classifier with a sub-1000ms response time.",
+        "Deployed the machine learning model using FastAPI and Docker, creating a scalable web application with a Streamlit front-end for user interaction."
+      ]
+    },
+    {
+      "section": "Key Projects - Autonomous Navigation of Mars Rover |Robotics Club, IIT Kanpur |Summer Project (May’24 - July’24)",
+      "bullets": [
+        "Trained and deployed a YOLOv8 machine learning model on a custom-annotated dataset of 1,500+ images, achieving 87% accuracy in object detection.",
+        "Engineered a computer vision pipeline using Python and OpenCV, incorporating Canny edge detection and Hough Transforms for precise object recognition.",
+        "Processed and analyzed 3D point cloud and RGB-D data to accurately estimate object depth for autonomous navigation.",
+        "Implemented the ORB-SLAM library to perform Simultaneous Localization and Mapping (SLAM) within a simulated environment, enabling autonomous rover pathfinding."
+      ]
+    },
+    {
+      "section": "Key Projects - BrainSegmentor |Self Project |/gtb (April’24 - Jun’24)",
+      "bullets": [
+        "Designed and implemented a 3D U-Net deep learning model in Tensorflow to analyze brain MRI scans from the BraTS-2020 dataset for tumor segmentation.",
+        "Developed a custom data pipeline with Tensorflow data generators to efficiently process and train the model on a dataset of 1,800+ MRI samples.",
+        "Conducted model performance evaluation, achieving 98% accuracy, 98.5% precision, and a 0.77 Intersection-Over-Union (IOU) score."
+      ]
+    },
+    {
+      "section": "Key Projects - Chirp: Birdsong Recognition |GDSC, IIT Kanpur |Winter Project |/gtb (Dec’23 - January’24)",
+      "bullets": [
+        "Engineered a data processing pipeline to extract Mel-Frequency Cepstral Coefficients (MFCCs) from a diverse dataset of over 25,000 audio samples.",
+        "Fine-tuned a ResNet-50 model for birdsong recognition using transfer learning in PyTorch, adapting it to a custom audio dataset.",
+        "Implemented custom PyTorch data loaders and generators to optimize the training process, improving data throughput and model performance."
+      ]
+    },
+    {
+      "section": "Positions of Responsibility - Coordinator |Robotics Club (April’24 - Present)",
+      "bullets": [
+        "Managed a budget of INR 2 Lakhs for club operations, securing approval through a formal presentation to the student senate.",
+        "Led the organization of a robotics competition for 30+ engineering students, overseeing the event from conception to execution."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+2025-05-14 11:08:29,860 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 11:22:58,317 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 11:25:33,039 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 11:31:49,280 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 11:34:03,188 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 11:38:46,384 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 12:03:30,301 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 12:04:19,304 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 12:04:20,559 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 12:04:21,704 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 12:04:21,774 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-14 12:04:21,775 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2025-05-14 12:04:24,495 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:31:55,332 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 18:33:14,904 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:33:16,221 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:33:17,495 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:33:18,189 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:43:18,123 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 18:44:22,791 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 18:45:23,068 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 18:46:39,333 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:46:40,222 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:46:43,748 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:46:46,400 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:54:03,204 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 18:55:10,887 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:55:11,749 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:55:14,265 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:55:16,572 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 18:55:57,452 - INFO - recommender - Fetching resources for missing skills...
+2025-05-14 18:55:57,452 - INFO - recommender - Fetching YouTube resources for skill: Technical skills:
+
+* Utilize Python and relevant open-source libraries for data processing, visualization, and predictive modeling (not present in the resume)
+* Run and fine-tune open-source Large Language Models (LLMs) for NLP tasks (not present in the resume)
+* Implement and maintain data pipelines, ensuring scalability and performance (not present in the resume)
+* Strong scripting and test automation abilities (not present in the resume)
+
+Soft skills:
+
+* Strong problem-solving skills (present in the resume)
+* Strong attention to detail (present in the resume)
+* Ability to work independently and in teams (present in the resume)
+
+Academic qualifications:
+2025-05-14 18:56:01,988 - INFO - recommender - Found 4 unique resources for skill: Technical skills:
+
+* Utilize Python and relevant open-source libraries for data processing, visualization, and predictive modeling (not present in the resume)
+* Run and fine-tune open-source Large Language Models (LLMs) for NLP tasks (not present in the resume)
+* Implement and maintain data pipelines, ensuring scalability and performance (not present in the resume)
+* Strong scripting and test automation abilities (not present in the resume)
+
+Soft skills:
+
+* Strong problem-solving skills (present in the resume)
+* Strong attention to detail (present in the resume)
+* Ability to work independently and in teams (present in the resume)
+
+Academic qualifications:
+2025-05-14 19:13:55,194 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-14 19:14:41,526 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 19:14:42,350 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 19:14:43,393 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 19:14:44,207 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-14 19:15:35,413 - INFO - recommender - Fetching resources for missing skills...
+2025-05-14 19:15:35,413 - INFO - recommender - Fetching YouTube resources for skill: Here is the output:
+
+Technical skills:
+* SQL
+* LLMs (Large Language Models), specifically Llama and Mistral
+* Pandas, NumPy, Scikit-learn, and relevant open-source libraries for data processing, visualization, and predictive modeling
+* Open-source Large Language Models (LLMs) for NLP tasks
+
+Soft skills:
+* Strong problem-solving skills
+* Attention to detail
+* Ability to work independently and in teams
+* Strong scripting and test automation abilities
+
+Academic qualifications:
+* None mentioned that are not present in the resume
+2025-05-14 19:15:37,603 - INFO - recommender - Found 0 unique resources for skill: Here is the output:
+
+Technical skills:
+* SQL
+* LLMs (Large Language Models), specifically Llama and Mistral
+* Pandas, NumPy, Scikit-learn, and relevant open-source libraries for data processing, visualization, and predictive modeling
+* Open-source Large Language Models (LLMs) for NLP tasks
+
+Soft skills:
+* Strong problem-solving skills
+* Attention to detail
+* Ability to work independently and in teams
+* Strong scripting and test automation abilities
+
+Academic qualifications:
+* None mentioned that are not present in the resume
+2025-05-14 19:16:00,313 - INFO - recommender - Fetching resources for missing skills...
+2025-05-14 19:16:00,313 - INFO - recommender - Fetching YouTube resources for skill: Here is the output:
+
+Technical skills:
+* SQL
+* LLMs (Large Language Models), specifically Llama and Mistral
+* Pandas, NumPy, Scikit-learn, and relevant open-source libraries for data processing, visualization, and predictive modeling
+* Open-source Large Language Models (LLMs) for NLP tasks
+
+Soft skills:
+* Strong problem-solving skills
+* Attention to detail
+* Ability to work independently and in teams
+* Strong scripting and test automation abilities
+
+Academic qualifications:
+* None mentioned that are not present in the resume
+2025-05-14 19:16:02,459 - INFO - recommender - Found 0 unique resources for skill: Here is the output:
+
+Technical skills:
+* SQL
+* LLMs (Large Language Models), specifically Llama and Mistral
+* Pandas, NumPy, Scikit-learn, and relevant open-source libraries for data processing, visualization, and predictive modeling
+* Open-source Large Language Models (LLMs) for NLP tasks
+
+Soft skills:
+* Strong problem-solving skills
+* Attention to detail
+* Ability to work independently and in teams
+* Strong scripting and test automation abilities
+
+Academic qualifications:
+* None mentioned that are not present in the resume
+2025-05-15 05:44:11,353 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-15 05:45:31,081 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 05:45:32,006 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 05:45:32,905 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 05:45:33,351 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 05:46:52,606 - INFO - recommender - Fetching resources for missing skills...
+2025-05-15 05:46:52,606 - INFO - recommender - Fetching YouTube resources for skill: Technical skills:
+
+� SQL
+� R
+� Tableau
+� Power BI
+� Matplotlib
+
+Soft skills:
+
+� Strong analytical and problem-solving skills
+� Strong communication and teamwork skills
+
+Academic qualifications:
+2025-05-15 05:47:00,219 - INFO - recommender - Found 14 unique resources for skill: Technical skills:
+
+� SQL
+� R
+� Tableau
+� Power BI
+� Matplotlib
+
+Soft skills:
+
+� Strong analytical and problem-solving skills
+� Strong communication and teamwork skills
+
+Academic qualifications:
+2025-05-15 05:55:54,460 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-15 05:56:26,447 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 05:56:27,427 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 05:56:28,702 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 05:56:29,435 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 05:57:06,517 - INFO - recommender - Fetching resources for missing skills...
+2025-05-15 05:57:06,518 - INFO - recommender - Fetching YouTube resources for skill: Tableau
+2025-05-15 05:57:13,549 - INFO - recommender - Found 28 unique resources for skill: Tableau
+2025-05-15 05:57:30,861 - INFO - recommender - Fetching resources for missing skills...
+2025-05-15 05:57:30,861 - INFO - recommender - Fetching YouTube resources for skill: Power BI
+2025-05-15 05:57:37,753 - INFO - recommender - Found 33 unique resources for skill: Power BI
+2025-05-15 06:04:20,605 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-15 06:05:23,551 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 06:05:25,969 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 06:05:26,058 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 06:05:26,060 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2025-05-15 06:05:33,309 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 06:05:33,376 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 06:05:33,376 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2025-05-15 06:05:41,017 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 06:07:19,362 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 06:07:21,281 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 06:07:21,353 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 06:07:21,355 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 8.000000 seconds
+2025-05-15 06:07:31,564 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 06:07:31,624 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 06:07:31,624 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2025-05-15 06:07:37,918 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 07:32:48,643 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-15 07:33:36,010 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-15 07:34:29,520 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 07:34:30,486 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 07:34:31,706 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 07:34:32,316 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:31:21,756 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-15 13:34:46,707 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:34:47,620 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:34:47,687 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 13:34:47,688 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 23.000000 seconds
+2025-05-15 13:35:14,209 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:35:14,281 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 13:35:14,281 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2025-05-15 13:35:19,900 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:51:47,706 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-15 13:52:31,374 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:52:32,276 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:52:32,349 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 13:52:32,349 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2025-05-15 13:52:34,789 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:52:34,859 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 13:52:34,861 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2025-05-15 13:52:40,286 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:54:09,648 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-15 13:54:30,412 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:54:31,720 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:54:32,179 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:54:32,243 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 13:54:32,244 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2025-05-15 13:54:39,031 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:57:12,680 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:57:14,388 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:57:15,221 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 13:57:15,281 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 13:57:15,282 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2025-05-15 13:57:21,822 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 14:04:29,713 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 14:04:30,648 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 14:04:31,081 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 14:04:31,251 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 14:04:31,251 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2025-05-15 14:04:38,009 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 14:06:19,434 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-15 14:06:41,849 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-15 14:08:01,305 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-15 14:08:36,670 - INFO - recommender - Fetching resources for missing skills...
+2025-05-15 14:08:36,671 - INFO - recommender - Fetching YouTube resources for skill: Machine learning algorithms
+2025-05-15 14:08:46,766 - INFO - recommender - Found 25 unique resources for skill: Machine learning algorithms
+2025-05-15 14:14:29,495 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-15 14:16:32,979 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 14:16:34,105 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 14:16:34,185 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 14:16:34,187 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2025-05-15 14:16:36,665 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 14:16:36,764 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-15 14:16:36,768 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2025-05-15 14:16:43,627 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-15 14:17:14,599 - INFO - recommender - Fetching resources for missing skills...
+2025-05-15 14:17:14,599 - INFO - recommender - Fetching YouTube resources for skill: Oracle DB
+2025-05-15 14:17:26,269 - INFO - recommender - Found 29 unique resources for skill: Oracle DB
+2025-05-16 13:29:51,602 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-16 13:30:55,015 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 13:30:55,941 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 13:30:56,011 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-16 13:30:56,011 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2025-05-16 13:31:02,685 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 13:31:02,761 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-16 13:31:02,761 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2025-05-16 13:31:07,259 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 13:31:50,132 - INFO - recommender - Fetching resources for missing skills...
+2025-05-16 13:31:50,132 - INFO - recommender - Fetching YouTube resources for skill: Azure
+2025-05-16 13:31:57,599 - INFO - recommender - Found 29 unique resources for skill: Azure
+2025-05-16 16:05:37,775 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-16 16:08:59,276 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 16:09:05,248 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 16:09:06,565 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-16 16:09:06,566 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2025-05-16 16:09:11,882 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 16:09:12,274 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-16 16:09:12,274 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2025-05-16 16:09:15,338 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 16:09:42,541 - INFO - recommender - Fetching resources for missing skills...
+2025-05-16 16:09:42,542 - INFO - recommender - Fetching YouTube resources for skill: Scalable 1D signal processing
+2025-05-16 16:09:50,197 - INFO - recommender - Found 20 unique resources for skill: Scalable 1D signal processing
+2025-05-16 16:20:55,825 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-16 16:21:06,623 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-16 16:25:53,113 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-16 16:26:14,853 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-16 16:27:19,017 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 16:27:22,308 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 16:27:22,485 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-16 16:27:22,487 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2025-05-16 16:27:44,083 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 16:27:44,580 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 16:54:32,856 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-16 16:55:17,604 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 17:00:01,492 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 17:01:14,058 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 17:03:29,454 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 17:04:45,932 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 17:05:25,730 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-16 21:27:19,389 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-18 18:25:59,495 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-18 18:32:17,641 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-18 18:32:19,485 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-18 18:32:19,549 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-18 18:32:19,549 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 9.000000 seconds
+2025-05-18 18:32:29,101 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-18 18:32:29,160 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-18 18:32:29,160 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2025-05-18 18:32:33,605 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:07:36,465 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-20 12:09:16,353 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-20 12:09:44,063 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:09:45,687 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:09:46,884 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:09:46,956 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-20 12:09:46,956 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2025-05-20 12:09:50,362 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:14:41,453 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:14:42,309 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:14:42,715 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:14:42,767 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-20 12:14:42,769 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2025-05-20 12:14:46,160 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:18:03,619 - INFO - __init__ - file_cache is only supported with oauth2client<4.0.0
+2025-05-20 12:18:49,282 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:18:50,179 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:18:50,241 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-20 12:18:50,241 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2025-05-20 12:18:54,915 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-20 12:18:54,970 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-05-20 12:18:54,970 - INFO - _base_client - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2025-05-20 12:19:01,520 - INFO - _client - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
