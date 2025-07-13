@@ -135,20 +135,109 @@ def display_skill_match(missing_skills_len, job_skills_len):
     # Progress bar expects 0.0–1.0
     st.progress(match_percentage / 100.0)
 
+def calculate_ats_score(job_skills, missing_skills):
+    # 🧠 Skill Match Score (85%)
+    total_jd_skills = sum(len(job_skills.get(cat, [])) for cat in job_skills)
+    total_missing_skills = sum(len(missing_skills.get(cat, [])) for cat in missing_skills)
+    matched_skills = total_jd_skills - total_missing_skills
+
+    if total_jd_skills > 0:
+        skill_match_score = (matched_skills / total_jd_skills) * 50
+    else:
+        skill_match_score = 0
+
+    # 🎓 Education Score (5%)
+    total_jd_degrees = len(job_skills.get("academic_qualifications", []))
+    missing_degrees = len(missing_skills.get("academic_qualifications", []))
+    matched_degrees = total_jd_degrees - missing_degrees
+
+    if total_jd_degrees > 0:
+        education_score = (matched_degrees / total_jd_degrees) * 15
+    else:
+        education_score = 0
+
+    # 📄 Formatting Score (10%)
+    formatting_score = 10  # Assume formatting is clean for now
+
+    # 🏁 Total ATS Score
+    total_score = skill_match_score + education_score + formatting_score
+    return round(total_score, 2)
+
+
+def display_ats_score(ats_score):
+    # Set color based on score
+    if ats_score >= 80:
+        color = "#4CAF50"  # Green
+        rating = "✅ Excellent Fit"
+    elif ats_score >= 60:
+        color = "#FFC107"  # Amber
+        rating = "⚠️ Good Fit"
+    else:
+        color = "#F44336"  # Red
+        rating = "❗ Needs Improvement"
+
+    # Display Circle Progress
+    st.markdown(f"""
+    <div style="display:flex;align-items:center;justify-content:center;margin:20px 0;">
+      <div style="
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 15px solid {color};
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: {color};
+      ">
+        {ats_score}%
+      </div>
+    </div>
+    <h3 style="text-align:center;color:{color}">{rating}</h3>
+    """, unsafe_allow_html=True)
 
 def display_missing_skills(missing_skills):
     st.subheader("❗ Missing Skills")
-    all_missing_skills = missing_skills.get("technical_skills", [])
-    if all_missing_skills:
+    all_missing_technical_skills = missing_skills.get("technical_skills", [])
+    all_missing_soft_skills = missing_skills.get("soft_skills", [])
+    all_missing_academic_skills = missing_skills.get("academic_qualifications", [])
+
+    
+    if all_missing_technical_skills:
+        st.markdown("**Technical Skills**")
         # Create a list of styled skill strings
         styled_skills = [
             f"<span style='background-color:#FF6961;color:white;padding:5px 10px;border-radius:20px;margin:3px;display:inline-block'>{skill}</span>"
-            for skill in all_missing_skills
+            for skill in all_missing_technical_skills
         ]
         # Join them and display within a single markdown call for better grouping
         st.markdown(" ".join(styled_skills), unsafe_allow_html=True)
-    else:
-        st.write("No missing skills to display.")
+ 
+
+    
+    if all_missing_soft_skills:
+        st.markdown("**Soft Skills**")
+        # Create a list of styled skill strings
+        styled_skills = [
+            f"<span style='background-color:#FF6961;color:white;padding:5px 10px;border-radius:20px;margin:3px;display:inline-block'>{skill}</span>"
+            for skill in all_missing_soft_skills
+        ]
+        # Join them and display within a single markdown call for better grouping
+        st.markdown(" ".join(styled_skills), unsafe_allow_html=True)
+   
+
+
+    if all_missing_academic_skills:
+        st.markdown("**Academic Skills**")
+        # Create a list of styled skill strings
+        styled_skills = [
+            f"<span style='background-color:#FF6961;color:white;padding:5px 10px;border-radius:20px;margin:3px;display:inline-block'>{skill}</span>"
+            for skill in all_missing_academic_skills
+        ]
+        # Join them and display within a single markdown call for better grouping
+        st.markdown(" ".join(styled_skills), unsafe_allow_html=True)
+  
 
 def display_work_experience(experiences):
     st.subheader("💼 Work Experience")
@@ -171,16 +260,29 @@ def display_projects(projects):
     st.subheader("🚀 Key Projects")
 
     for i, proj in enumerate(projects):
-        # Each st.expander will be rendered on a new line
+        outcomes = proj.get('outcomes', [])
+        
+        # 🔥 Normalize outcomes to always be a list
+        if isinstance(outcomes, str):
+            outcomes = [outcomes]
+        elif not isinstance(outcomes, list):
+            outcomes = []
+
+        technologies = proj.get('technologies_used', [])
+        if isinstance(technologies, str):
+            technologies = [technologies]
+        elif not isinstance(technologies, list):
+            technologies = []
+
         with st.expander(f"**{proj.get('project_name', 'N/A')}**"):
             st.markdown(f"""
                 <div style="background: #f8f8f8; color: #333; padding: 15px; border-radius: 10px; margin-bottom: 10px;">
-                    <strong>Objective:</strong> <ul>
-                    <p><em>{proj.get('objective', '')}</em></p>
-                    <strong>Outcome:</strong> <ul>
-                        {''.join([f"<li>{resp}</li>" for resp in proj.get('outcomes', [])])}
+                    <p><strong>Objective:</strong> <em>{proj.get('objective', 'N/A')}</em></p>
+                    <p><strong>Outcome:</strong></p>
+                    <ul>
+                        {''.join([f"<li>{resp}</li>" for resp in outcomes])}
                     </ul>
-                    <strong>Technologies:</strong> {', '.join(proj.get('technologies_used', []))}<br>
+                    <p><strong>Technologies:</strong> {', '.join(technologies) or 'N/A'}</p>
                 </div>
             """, unsafe_allow_html=True)
 
@@ -201,6 +303,37 @@ def display_personal_info(info):
             st.markdown(f"🔗 [Kaggle]({profile})")
         else:
             st.markdown(f"🔗 [Other Links]({profile})")
+
+import urllib.parse
+
+def display_youtube_courses(youtube_links, skill_name):
+
+    for link in youtube_links:
+        # Extract video ID for thumbnail
+        parsed_url = urllib.parse.urlparse(link)
+        query_params = urllib.parse.parse_qs(parsed_url.query)
+        video_id = query_params.get("v", [""])[0]
+
+        if video_id:
+            thumbnail_url = f"https://img.youtube.com/vi/{video_id}/0.jpg"
+        else:
+            thumbnail_url = "https://via.placeholder.com/320x180.png?text=Video"
+
+        # Display Card
+        st.markdown(f"""
+        <div style="display: flex; align-items: center; background-color: #f9f9f9; border-radius: 10px; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd;">
+            <img src="{thumbnail_url}" width="150" style="border-radius: 8px; margin-right: 15px;">
+            <div>
+                <h4 style="margin-bottom:5px;">{skill_name} Course</h4>
+                <a href="{link}" target="_blank" style="text-decoration: none;">
+                    <button style="background-color:#FF0000;color:white;padding:8px 16px;border:none;border-radius:5px;cursor:pointer;">
+                        ▶️ Watch on YouTube
+                    </button>
+                </a>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
 
 def display_ats_content(ats_content_data):
     st.subheader("💡 Optimized Resume Bullet Points")
@@ -409,24 +542,6 @@ elif st.session_state.page == "main":
                 else:
                     st.warning("Please upload a resume and enter a job description.")
 
-        # If analysis data exists (either previously or just uploaded)
-        # if analysis:
-        #     st.subheader("Resume Summary")
-        #     st.write(analysis.get("summary", "No summary available."))
-
-        #     st.subheader("Skills in Resume")
-        #     st.write(analysis.get("credentials", []))
-
-        #     st.subheader("Job Skills")
-        #     st.write(analysis.get("job_skills", []))
-
-        #     st.subheader("Missing Skills")
-        #     st.write(analysis.get("missing_skills", []))
-
-        #     if st.button("🔄 New Analysis"):
-        #         st.session_state.session_data["resume_analysis"] = {}
-        #         st.rerun()
-
         if analysis:
             # 📊 Beautiful Report Heading
             st.markdown("""
@@ -444,7 +559,16 @@ elif st.session_state.page == "main":
             display_skill_match(missing_skills_len, total_skills_len)
 
             # ❗ Missing Skills as Chips
-            display_missing_skills(analysis.get("missing_skills", {}))
+            display_missing_skills(analysis.get("missing_skills", {}))            
+
+            # 📊 ATS Score Circle Progres
+            ats_score = calculate_ats_score(
+                analysis.get("job_skills", {}),
+                analysis.get("missing_skills", {})
+            )
+
+            st.subheader("📈 ATS Score")
+            display_ats_score(ats_score)
 
             # 💼 Work Experience as Flip Cards
             display_work_experience(summary.get("work_experience", []))
@@ -476,9 +600,10 @@ elif st.session_state.page == "main":
                 resp = requests.get(f"{API_BASE_URL}/recommend_courses", params={"skill": skill})
                 if resp.status_code == 200:
                     courses = resp.json().get("courses", [])
-                    st.subheader(f"Recommended Courses for '{skill}'")
-                    for course in courses:
-                        st.write(course)
+                    st.subheader(f"🎓 Recommended YouTube Courses for {skill}")
+                    display_youtube_courses(courses, skill)
+                    # for course in courses:
+                        # st.write(course)
                 else:
                     st.error("Failed to fetch recommendations.")
         else:
@@ -493,7 +618,6 @@ elif st.session_state.page == "main":
         if resp.status_code == 200:
             content = resp.json()
             st.markdown("### Optimized Bullet Points")
-            print(content)
             display_ats_content(content.get("ats_content", "No ATS content available."))
             # st.write(content.get("ats_content", "No ATS content available."))
         else:

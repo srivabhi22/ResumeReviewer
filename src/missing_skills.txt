@@ -5,16 +5,12 @@
     "CI/CD",
     "MLOps",
     "Linux",
-    "BASH scripting",
-    "Low-latency programming",
-    "FPGA",
-    "Hardware Acceleration"
+    "BASH scripting"
   ],
   "soft_skills": [
+    "Problem-solving",
+    "Results-oriented",
     "Motivated"
   ],
-  "academic_qualifications": [
-    "Master's degree",
-    "PhD degree"
-  ]
+  "academic_qualifications": []
 }

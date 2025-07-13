@@ -4,25 +4,22 @@
     "Machine Learning",
     "LLM",
     "NLP",
-    "Tensorflow",
-    "Pytorch",
+    "TensorFlow",
+    "PyTorch",
     "CI/CD",
     "MLOps",
     "Linux",
     "SQL",
     "Git",
     "BASH scripting",
-    "Python",
-    "Low-latency programming",
-    "FPGA",
-    "Hardware Acceleration"
+    "Python"
   ],
   "soft_skills": [
+    "Problem-solving",
+    "Results-oriented",
     "Motivated"
   ],
   "academic_qualifications": [
-    "Bachelor's degree",
-    "Master's degree",
-    "PhD degree"
+    "Bachelor's, Master's, or PhD (ongoing or complete)"
   ]
 }

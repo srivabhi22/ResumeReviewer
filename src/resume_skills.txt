@@ -21,7 +21,7 @@
     "Heroku",
     "Jupyter Notebook",
     "Git",
-    "LATEX",
+    "L ATEX",
     "YOLOv8",
     "UNet2D",
     "CVAT",
@@ -38,17 +38,19 @@
     "Mel-Frequency Cepstral Coefficients (MFCCs)",
     "ResNet-50"
   ],
-  "soft_skills": [],
+  "soft_skills": [
+    "innovation"
+  ],
   "academic_qualifications": [
-    "B.Tech, Mechanical Engineering, Indian Institute of Technology Kanpur",
-    "CBSE (XII), Ramagya School, Noida",
-    "CBSE (X), Ramagya School, Noida",
+    "B.Tech, Mechanical Engineering, Indian Institute of Technology Kanpur, 7.1/10",
+    "CBSE (XII), Ramagya School, Noida, 87.6%",
+    "CBSE (X), Ramagya School, Noida, 94.6%",
     "Secured AIR 2889 inJEE Advanced and AIR 2306 inJEE Mains 2022",
     "Secured AIR 122inNEST and AIR 387inIISER Aptitude Test 2022",
-    "Relevant Course: Dynamics Theory of Mechanics & Machines",
-    "Relevant Course: Primary Manufacturing Processes",
-    "Relevant Course: Introduction to Machine Learning",
-    "Relevant Course: Economy, Society & Public Policy",
-    "Relevant Course: Introduction to Real Analysis"
+    "Dynamics Theory of Mechanics & Machines",
+    "Primary Manufacturing Processes",
+    "Introduction to Machine Learning",
+    "Economy, Society & Public Policy",
+    "Introduction to Real Analysis"
   ]
 }
