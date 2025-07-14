@@ -23,7 +23,8 @@ from frontend.display import (
 from frontend.credentials import register_user, login_user, fetch_session_data
 
 # API Base URL
-API_BASE_URL = "http://localhost:8000"
+# API_BASE_URL = "http://localhost:8000"
+API_BASE_URL = "http://backend:8000" #use if running in docker-compose
 
 # --- SESSION STATE ---
 if "auth_token" not in st.session_state:
