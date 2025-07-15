@@ -1,9 +1,9 @@
 # ====== Docker Commands ======
 echo "Building backend image..."
-docker build -t my-backend -f backend/Dockerfile .
+docker build -t backend -f backend/Dockerfile .
 
 echo "Building frontend image..."
-docker build -t my-frontend -f frontend/Dockerfile .
+docker build -t frontend -f frontend/Dockerfile .
 
 echo "Starting Docker Compose with build..."
 docker compose up --build

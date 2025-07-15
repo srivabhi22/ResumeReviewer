@@ -1,9 +1,65 @@
-# version: "3.8"
+# # version: "3.8"
+
+# services:
+#   postgres: # service name for PostgreSQL database
+#     image: postgres:15 #for azure friendly deployment, use a version that is compatible with Azure
+#     # image: postgres:13
+#     container_name: resume-postgres
+#     restart: always
+#     environment:
+#       POSTGRES_USER: postgres
+#       POSTGRES_PASSWORD: abhi2004
+#       POSTGRES_DB: resume_reviewer
+#     ports:
+#       - "5432:5432"
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data
+#     networks:
+#       - resume-network
+
+#   backend: # service name for backend application
+#     build:
+#       context: .
+#       dockerfile: backend/Dockerfile
+#     container_name: resume-backend
+#     ports:
+#       - "8000:8000"
+#     depends_on:
+#       - postgres
+#     env_file:
+#       - .env
+#     volumes:
+#       - ./src:/app/src
+#     networks:
+#       - resume-network
+
+#   frontend: # service name for frontend application
+#     build:
+#       context: .
+#       dockerfile: frontend/Dockerfile
+#     container_name: resume-frontend
+#     ports:
+#       - "8501:8501"
+#     depends_on:
+#       - backend
+#     env_file:
+#       - .env
+#     volumes:
+#       - ./src:/app/src
+#     networks:
+#       - resume-network
+
+# networks:
+#   resume-network:
+#     driver: bridge
+
+# volumes:
+#   postgres_data:
+
 
 services:
-  postgres: # service name for PostgreSQL database
-    image: postgres:15 #for azure friendly deployment, use a version that is compatible with Azure
-    # image: postgres:13
+  postgres: # PostgreSQL service
+    image: resumerevieweracr.azurecr.io/postgres15:latest
     container_name: resume-postgres
     restart: always
     environment:
@@ -17,35 +73,29 @@ services:
     networks:
       - resume-network
 
-  backend: # service name for backend application
-    build:
-      context: .
-      dockerfile: backend/Dockerfile
+  backend: # Backend service
+    image: resumerevieweracr.azurecr.io/resumereviewer-backend:latest
     container_name: resume-backend
+    restart: always
     ports:
       - "8000:8000"
     depends_on:
       - postgres
     env_file:
       - .env
-    volumes:
-      - ./src:/app/src
     networks:
       - resume-network
 
-  frontend: # service name for frontend application
-    build:
-      context: .
-      dockerfile: frontend/Dockerfile
+  frontend: # Frontend service
+    image: resumerevieweracr.azurecr.io/resumereviewer-frontend:latest
     container_name: resume-frontend
+    restart: always
     ports:
       - "8501:8501"
     depends_on:
       - backend
     env_file:
       - .env
-    volumes:
-      - ./src:/app/src
     networks:
       - resume-network
 
