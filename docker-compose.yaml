@@ -2,7 +2,8 @@
 
 services:
   postgres: # service name for PostgreSQL database
-    image: postgres:13
+    image: postgres:15 #for azure friendly deployment, use a version that is compatible with Azure
+    # image: postgres:13
     container_name: resume-postgres
     restart: always
     environment:
