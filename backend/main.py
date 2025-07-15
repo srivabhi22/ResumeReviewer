@@ -60,7 +60,7 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: DBSession = Depend
         raise HTTPException(status_code=401, detail="Invalid token")
 
 
-def clean_resume_analysis(summary, credentials, missing_skills, job_skills):
+def clean_resume_analysis(summary, credentials, missing_skills, job_skills, ats_content):
     try:
         # If any field is a string, parse it
         if isinstance(summary, str):
@@ -71,6 +71,8 @@ def clean_resume_analysis(summary, credentials, missing_skills, job_skills):
             missing_skills = json.loads(missing_skills)
         if isinstance(job_skills, str):
             job_skills = json.loads(job_skills)
+        if isinstance(ats_content, str):
+            ats_content = json.loads(ats_content)
     except Exception as e:
         raise ValueError(f"Invalid JSON format from LLM: {e}")
 
@@ -79,12 +81,14 @@ def clean_resume_analysis(summary, credentials, missing_skills, job_skills):
     credentials = credentials or {}
     missing_skills = missing_skills or {}
     job_skills = job_skills or {}
+    ats_content = ats_content or {}
 
     return {
         "summary": summary,
         "credentials": credentials,
         "missing_skills": missing_skills,
-        "job_skills": job_skills
+        "job_skills": job_skills,
+        "ats_content": ats_content
     }
 
 
@@ -164,8 +168,7 @@ def load_session(session_id: int, user: User = Depends(get_current_user), db: DB
         raise HTTPException(status_code=404, detail="Session not found")
     return session.data or {
     "resume_analysis": {},
-    "skill_recommendation": {},
-    "ats_bullets": {}
+    "skill_recommendation": {}
     }
 
 
@@ -191,13 +194,13 @@ async def parse_resume(
 
         print(f"Processing resume at: {resume_path}")
         # Parse resume (your existing logic)
-        summary, credentials, missing_skills, job_skills, _ = parser.parse_resume(
+        summary, credentials, missing_skills, job_skills, ats_content = parser.parse_resume(
             resume_path, job_description
         )
-
+        print(ats_content)
         # Clean and validate LLM output
         resume_analysis = clean_resume_analysis(
-            summary, credentials, missing_skills, job_skills
+            summary, credentials, missing_skills, job_skills, ats_content
         )
         # Delete the file after processing
         os.remove(resume_path)
@@ -232,20 +235,3 @@ def recommend_courses(skill: str):
     except Exception as e:
         return {'error': str(e)}
     
-@app.get('/ats_optimized_bullets')
-def get_ats_optimized_bullets(file_path: str):
-    try:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            ats_content = file.read()
-
-        # If any field is a string, parse it
-        if isinstance(ats_content, str):
-            ats_content = json.loads(ats_content)
-        return {"ats_content": ats_content}
-    
-    except FileNotFoundError:
-        print(f"Error: File '{file_path}' not found.")
-        return None
-    except Exception as e:
-        print(f"Error while processing file: {e}")
-        return None

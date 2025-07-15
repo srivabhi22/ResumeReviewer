@@ -4,7 +4,8 @@ import os
 
 
 # API Base URL
-API_BASE_URL = "http://localhost:8000"
+# API_BASE_URL = "http://localhost:8000"
+API_BASE_URL = "http://backend:8000" #use if running in docker-compose
 
 
 # --- AUTH FUNCTIONS ---
@@ -43,6 +44,5 @@ def fetch_session_data(session_id):
         st.error("❌ Failed to load session data.")
         st.session_state.session_data = {
             "resume_analysis": {},
-            "skill_recommendation": {},
-            "ats_bullets": {}
+            "skill_recommendation": {}
         }

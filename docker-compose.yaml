@@ -1,28 +1,56 @@
-version: "3.8"
+# version: "3.8"
 
 services:
-  backend:
+  postgres: # service name for PostgreSQL database
+    image: postgres:13
+    container_name: resume-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: abhi2004
+      POSTGRES_DB: resume_reviewer
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - resume-network
+
+  backend: # service name for backend application
     build:
       context: .
       dockerfile: backend/Dockerfile
     container_name: resume-backend
     ports:
-      - "8000:8000"  # assuming backend runs on 8000
+      - "8000:8000"
+    depends_on:
+      - postgres
     env_file:
       - .env
     volumes:
       - ./src:/app/src
+    networks:
+      - resume-network
 
-  frontend:
+  frontend: # service name for frontend application
     build:
       context: .
       dockerfile: frontend/Dockerfile
     container_name: resume-frontend
     ports:
-      - "8501:8501"  # streamlit frontend
+      - "8501:8501"
     depends_on:
       - backend
     env_file:
       - .env
     volumes:
       - ./src:/app/src
+    networks:
+      - resume-network
+
+networks:
+  resume-network:
+    driver: bridge
+
+volumes:
+  postgres_data:

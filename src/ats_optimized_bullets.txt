@@ -1,0 +1,63 @@
+{
+  "optimized_bullets": [
+    {
+      "section": "Work Experience - IndusTANTRA |Prof. Nalinaksh S. Vyas |Summer Intern |IIT Kanpur May’24 - Present",
+      "bullets": [
+        "Implemented YOLOv8 and UNet2D machine learning models to process and analyze image data, accurately detecting oversized and undersized coal pellets.",
+        "Developed a data pipeline to collect and process a custom dataset of over 3,000 images, utilizing OpenCV for data preparation and CVAT for annotation.",
+        "Engineered a least-squares fitting algorithm to analyze model outputs, achieving precise circular diameter estimations from predicted probability maps.",
+        "Optimized on-site camera configurations to establish a real-time data collection stream, ensuring high-quality input for machine learning models.",
+        "Designed a classification system that reduced redundant coal pellet processing by over 90% through effective, automated size-based segregation."
+      ]
+    },
+    {
+      "section": "Key Projects - Fault Detection and Classification using Deep Learning |Prof. Nalinaksh S. Vyas |IIT Kanpur Nov’23 - Feb’24",
+      "bullets": [
+        "Developed a data processing pipeline in Python to clean and analyze vibrational frequency data from 6 sensors for precise fault detection.",
+        "Optimized and fine-tuned a CNN architecture in Tensorflow, boosting model performance to 95% accuracy in real-world fault detection scenarios.",
+        "Conducted experiments using t-SNE to visualize high-dimensional feature spaces, enhancing neural network interpretability and fault segregation clarity.",
+        "Engineered a Tkinter-based GUI to enable user-driven model configuration and custom data input for the CNN, improving usability for testing."
+      ]
+    },
+    {
+      "section": "Key Projects - Finment |Self Project |/gtb Jun’24 - July’24",
+      "bullets": [
+        "Designed and implemented an NLP model using FastText to perform end-to-end sentiment classification on a diverse dataset of 5,000+ financial news statements.",
+        "Evaluated model performance to achieve 93% precision and 89% recall, optimizing the classifier to deliver a low-latency response time under 1 second.",
+        "Automated model deployment by containerizing the FastAPI application with Docker, ensuring scalable and seamless performance via a Streamlit web interface."
+      ]
+    },
+    {
+      "section": "Key Projects - Autonomous Navigation of Mars Rover |Robotics Club, IIT Kanpur |Summer Project May’24 - July’24",
+      "bullets": [
+        "Implemented computer vision algorithms, including Canny edge detection and Hough Transform with OpenCV, for high-precision object detection.",
+        "Trained and deployed a YOLOv8 model on a custom-built dataset of 1,500+ annotated images, achieving 87% detection accuracy.",
+        "Developed a system to process and analyze 3D point cloud data from a ZED camera, accurately estimating object depth for autonomous navigation.",
+        "Applied the ORB-SLAM library to perform Simultaneous Localization and Mapping within a simulated environment, contributing to autonomous system development."
+      ]
+    },
+    {
+      "section": "Key Projects - BrainSegmentor |Self Project |/gtb April’24 - Jun’24",
+      "bullets": [
+        "Implemented a Unet3D model in Tensorflow to process and analyze the BraTS-2020 MRI dataset for automated tumor segmentation and visualization.",
+        "Engineered custom Tensorflow data loaders and image generators to efficiently train the machine learning model on a dataset of 1,800+ MRI samples.",
+        "Conducted rigorous model performance evaluation, achieving 98% accuracy, 98.5% precision, and a 0.77 Intersection-Over-Union (IOU) score."
+      ]
+    },
+    {
+      "section": "Key Projects - Chirp: Birdsong Recognition |GDSC, IIT Kanpur |Winter Project |/gtb Dec’23 - January’24",
+      "bullets": [
+        "Developed a data pipeline to process a diverse dataset of 25,000+ audio samples, extracting Mel-Frequency Cepstral Coefficients (MFCCs) for feature engineering.",
+        "Fine-tuned a ResNet-50 model using transfer learning techniques in Pytorch, adapting it for a custom birdsong recognition task.",
+        "Optimized the model training process by implementing specialized Pytorch data loaders and generators, improving data throughput and efficiency."
+      ]
+    },
+    {
+      "section": "Positions of Responsibility - Coordinator |Robotics Club April’24 - Present",
+      "bullets": [
+        "Managed a budget of INR 2 Lakhs for club activities, securing approval through a formal presentation to the student senate.",
+        "Led the organization of a robotics competition with 30+ participants, overseeing the design and build phases of autonomous sumo bots."
+      ]
+    }
+  ]
+}

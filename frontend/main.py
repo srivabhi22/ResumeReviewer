@@ -36,8 +36,7 @@ if "session_id" not in st.session_state:
 if "session_data" not in st.session_state:
     st.session_state.session_data = {
         "resume_analysis": {},
-        "skill_recommendation": {},
-        "ats_bullets": {}
+        "skill_recommendation": {}
     }
 
 
@@ -220,15 +219,8 @@ elif st.session_state.page == "main":
     # --- ATS RESUME BULLETS PAGE ---
     elif tab == "ATS Resume Bullets":
         st.title("📑 ATS Optimized Resume Bullets")
-        src_dir = os.path.join(os.path.dirname(__file__), "..", "src")
-        ats_points_file_path = os.path.join(src_dir, "ats_optimized_bullets.txt")
-        resp = requests.get(f"{API_BASE_URL}/ats_optimized_bullets", headers=headers, params={'file_path': ats_points_file_path})
-        if resp.status_code == 200:
-            content = resp.json()
-            st.markdown("### Optimized Bullet Points")
-            display_ats_content(content.get("ats_content", "No ATS content available."))
-            # st.write(content.get("ats_content", "No ATS content available."))
-        else:
-            st.error("Failed to fetch ATS optimized bullets.")
+        analysis = st.session_state.session_data.get("resume_analysis", {}).get("ats_content", {})
+        print(analysis)
+        display_ats_content(analysis)
 
     

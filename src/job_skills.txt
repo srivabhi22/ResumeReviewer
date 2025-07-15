@@ -1,0 +1,25 @@
+{
+  "technical_skills": [
+    "Data Pipelines",
+    "Machine Learning",
+    "LLM",
+    "NLP",
+    "TensorFlow",
+    "PyTorch",
+    "CI/CD",
+    "MLOps",
+    "Linux",
+    "SQL",
+    "Git",
+    "BASH scripting",
+    "Python"
+  ],
+  "soft_skills": [
+    "Problem-solving"
+  ],
+  "academic_qualifications": [
+    "Bachelor's degree",
+    "Master's degree",
+    "PhD"
+  ]
+}

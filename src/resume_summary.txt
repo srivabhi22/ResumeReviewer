@@ -1,0 +1,172 @@
+{
+  "skills": [
+    "Python",
+    "C",
+    "C++",
+    "OpenCV",
+    "Numpy",
+    "Pandas",
+    "Matplotlib",
+    "Seaborn",
+    "Plotly",
+    "Matlab",
+    "Pytorch",
+    "Tensorflow",
+    "Streamlit",
+    "Tkinter",
+    "Flask",
+    "FastAPI",
+    "MySQL",
+    "Docker",
+    "Heroku",
+    "Jupyter Notebook",
+    "Git",
+    "LaTeX"
+  ],
+  "personal_info_and_education": {
+    "name": "Abhishek Srivastava",
+    "email": "srivabhi22@iitk.ac.in",
+    "phone": "+91 8076170946",
+    "profiles": [
+      "https://github.com/gtbsrivabhi22",
+      "https://linkedin.com/in/AbhishekSrivastava"
+    ],
+    "education": [
+      {
+        "degree": "B.Tech, Mechanical Engineering",
+        "institution": "Indian Institute of Technology Kanpur",
+        "graduation_year": "2022 - Present",
+        "achievements": [
+          "CGPA: 7.1/10",
+          "Secured AIR 2889 in JEE Advanced and AIR 2306 in JEE Mains 2022",
+          "Secured AIR 122 in NEST and AIR 387 in IISER Aptitude Test 2022"
+        ]
+      },
+      {
+        "degree": "CBSE (XII)",
+        "institution": "Ramagya School, Noida",
+        "graduation_year": "2022",
+        "achievements": [
+          "Percentage: 87.6%"
+        ]
+      },
+      {
+        "degree": "CBSE (X)",
+        "institution": "Ramagya School, Noida",
+        "graduation_year": "2020",
+        "achievements": [
+          "Percentage: 94.6%"
+        ]
+      }
+    ]
+  },
+  "work_experience": [
+    {
+      "job_title": "Summer Intern",
+      "company_name": "IndusTANTRA | IIT Kanpur",
+      "employment_duration": "May’24 - Present",
+      "responsibilities": [
+        "Implemented YOLOv8 and UNet2D segmentation model for detecting oversized and undersized coal pellets.",
+        "Created a custom labelled image dataset of 3000+ pellets using OpenCV and CVAT image annotation tool.",
+        "Used least-squares fitting approach on the predicted probability maps for accurate circular diameter estimation.",
+        "Worked on the camera setup and location in the on-site steel plant to capture accurate real time data.",
+        "Developed a system for reduction of repeated processing of the coal pellets by segregating the undersized and oversized pellets."
+      ],
+      "technologies_used": [
+        "YOLOv8",
+        "UNet2D",
+        "OpenCV",
+        "CVAT"
+      ]
+    }
+  ],
+  "key_projects": [
+    {
+      "project_name": "Fault Detection and Classification using Deep Learning",
+      "objective": "Utilized vibrational frequency data from 6 sensors for precise fault detection and classification in rotor bearings.",
+      "technologies_used": [
+        "CNN",
+        "t-SNE",
+        "Tkinter"
+      ],
+      "outcomes": [
+        "Redesigned the CNN architecture, achieving an accuracy of 0.95 in fault detection.",
+        "Enhanced neural network interpretability by applying t-SNE for visualizing fault segregation.",
+        "Built a Tkinter GUI allowing users to input custom data and configure the CNN model."
+      ]
+    },
+    {
+      "project_name": "Finment",
+      "objective": "Analyzed 5,000+ financial news statements with FastText for End to End sentiment classification.",
+      "technologies_used": [
+        "FastText",
+        "Streamlit",
+        "FastAPI",
+        "Docker"
+      ],
+      "outcomes": [
+        "Achieved 0.93 precision and 0.89 recall, resulting in a highly robust classifier.",
+        "Classifier response time under 1000ms per request.",
+        "Developed a Streamlit web app integrating the ML model with FastAPI and Docker containers."
+      ]
+    },
+    {
+      "project_name": "Autonomous Navigation of Mars Rover",
+      "objective": "To implement autonomous navigation using precise object detection and Simultaneous Localization and Mapping (SLAM).",
+      "technologies_used": [
+        "Canny edge detection",
+        "Hough Transform",
+        "OpenCV",
+        "YOLOv8",
+        "3D ZED Camera",
+        "ORB-SLAM"
+      ],
+      "outcomes": [
+        "Implemented YOLOv8 on a custom dataset of 1,500+ annotated images, achieving 0.87 accuracy.",
+        "Estimated the depth of centroids of objects using RGB depth maps and 3D point clouds.",
+        "Applied ORB-SLAM library for SLAM on a Mars terrain simulation."
+      ]
+    },
+    {
+      "project_name": "BrainSegmentor",
+      "objective": "Analyzed brain MRI scans using the BraTS-2020 dataset for tumor detection and visualization.",
+      "technologies_used": [
+        "Unet3D",
+        "TensorFlow",
+        "Custom data loaders"
+      ],
+      "outcomes": [
+        "Trained on 1,800+ samples using custom tensorflow image generators and data loaders.",
+        "Achieved an accuracy of 0.98, precision of 0.9852, Intersection-Over-Union (IOU) of 0.77 and Dice coefficient of 0.34."
+      ]
+    },
+    {
+      "project_name": "Chirp: Birdsong Recognition",
+      "objective": "To recognize birdsongs by extracting Mel-Frequency Cepstral Coefficients (MFCCs) and training a ResNet-50 model.",
+      "technologies_used": [
+        "MFCCs",
+        "ResNet-50",
+        "PyTorch",
+        "Transfer Learning"
+      ],
+      "outcomes": [
+        "Extracted MFCCs from a dataset containing 25000+ audio samples.",
+        "Leveraged transfer learning techniques for training the ResNet-50 model on custom audio data.",
+        "Employed specialized PyTorch data loaders and generators for optimal training."
+      ]
+    }
+  ],
+  "extracurricular_and_soft_skills": {
+    "activities": [
+      "Coordinator, Robotics Club (April’24 - Present)",
+      "Managed a budget worth INR 2 Lakhs which was presented to the council and approved by the Senate.",
+      "Successfully organized a competition with participation of 30+ students to design and build armored sumo bots."
+    ],
+    "soft_skills": [
+      "Leadership",
+      "Budget Management",
+      "Event Organization",
+      "Innovation"
+    ]
+  }
+}

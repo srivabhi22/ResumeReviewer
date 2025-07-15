@@ -22,8 +22,7 @@ class Session(Base):
     user_id = Column(Integer, ForeignKey("users.id"))
     data = Column(JSON, default={
         "resume_analysis": {},
-        "skill_recommendation": {},
-        "ats_bullets": {}
+        "skill_recommendation": {}
     })
     # data = Column(JSON, nullable=True)  # Allow null for initial creation
     created_at = Column(DateTime, default=datetime.utcnow)

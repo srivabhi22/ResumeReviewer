@@ -1,0 +1,17 @@
+{
+  "technical_skills": [
+    "Data Pipelines",
+    "LLM",
+    "CI/CD",
+    "MLOps",
+    "Linux",
+    "BASH scripting"
+  ],
+  "soft_skills": [
+    "Problem-solving"
+  ],
+  "academic_qualifications": [
+    "Master's degree",
+    "PhD"
+  ]
+}

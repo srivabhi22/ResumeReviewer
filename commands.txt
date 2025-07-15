@@ -1,0 +1,7 @@
+To remove all containers: $docker compose down -v
+To remove all images: $docker rmi $(docker images -aq)
+To build an image: docker build -t my-backend -f backend/Dockerfile . 
+To build containers and attach them: docker compose up --build
+To re-run the already built containers: docker compose up
+
+# Use 'container name of database service in docker' if running in docker-compose else use 'localhost' as POSTGRESS_HOST
